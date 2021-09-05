@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c8a03b4-7f05-46a5-9b96-b821ad28b531" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/controller/RegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftlh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user-edit.ftlh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/userList.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/model/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/zhenekns/dev/iba/model/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/zhenekns/dev/iba/controller/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/zhenekns/dev/iba/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/zhenekns/dev/iba/model/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/zhenekns/dev/iba/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/zhenekns/dev/iba/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/zhenekns/dev/iba/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/zhenekns/dev/iba/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/zhenekns/dev/iba/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/zhenekns/dev/iba/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +41,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -148,7 +136,8 @@
       <updated>1630775567797</updated>
       <workItem from="1630775570150" duration="10308000" />
       <workItem from="1630839313043" duration="965000" />
-      <workItem from="1630841377484" duration="1704000" />
+      <workItem from="1630841377484" duration="1843000" />
+      <workItem from="1630843654136" duration="2060000" />
     </task>
     <servers />
   </component>

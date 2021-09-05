@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 import java.util.Map;
@@ -27,7 +28,7 @@ public class MainController {
     }
 
     @GetMapping("/main")
-    public String main(@RequestParam(required = false) String filter,
+    public String main(@RequestParam(required = false, defaultValue = "") String filter,
                        Map<String, Object> model){
         Iterable<Message> messages = messageRepository.findAll();
 
@@ -46,6 +47,7 @@ public class MainController {
     public String add(@AuthenticationPrincipal User user,
                       @RequestParam String text,
                       @RequestParam String tag,
+                      @RequestParam("file") MultipartFile file,
                       Map<String, Object> model){
         Message message = new Message(text, tag, user);
         messageRepository.save(message);
