@@ -1,9 +1,6 @@
 package by.zhenekns.dev.iba.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -15,11 +12,20 @@ public class Message {
     private String text;
     private String tag;
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id")
+    private User author;
+
     public Message(){}
 
-    public Message(String text, String tag){
+    public Message(String text, String tag, User author) {
+        this.author = author;
         this.text = text;
         this.tag = tag;
+    }
+
+    public String getAuthorName(){
+        return author != null ? author.getUsername() : "<none>";
     }
 
     public Integer getId() {
@@ -44,6 +50,14 @@ public class Message {
 
     public void setTag(String tag) {
         this.tag = tag;
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User user) {
+        this.author = user;
     }
 
     @Override
